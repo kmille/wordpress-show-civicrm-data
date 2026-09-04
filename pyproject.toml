@@ -1,0 +1,26 @@
+[project]
+name = "civi-api-export"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kmille", email = "6470600+kmille@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=3.1.3",
+    "requests>=2.34.2",
+    "waitress>=3.0.2",
+]
+
+[project.scripts]
+civi-api-export = "civi_api_export:run_backend"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pdbpp>=0.12.1",
+]
