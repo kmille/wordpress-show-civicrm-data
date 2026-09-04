@@ -7,7 +7,7 @@ from flask import Flask
 import waitress
 
 
-FORMAT = "%(levelname)s: %(message)s"
+FORMAT = "%(asctime)s %(levelname)s: %(message)s"
 logging.basicConfig(format=FORMAT, level=logging.INFO)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 
