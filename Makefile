@@ -9,3 +9,9 @@ deploy:
 	git pull
 	sudo docker compose build --no-cache --pull
 	sudo docker compose up -d
+
+logs:
+	sudo docker compose logs --tail 10 -f
+
+restart:
+	sudo docker compose restart
