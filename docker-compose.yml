@@ -4,7 +4,7 @@ services:
     container_name: civi-api-exporter
     build: .
     environment:
-      DEBUG: ${DEBU:-falseG}
+      DEBUG: ${DEBUG:-false}
       CIVICRM_BASE_URL: ${CIVICRM_BASE_URL}
       CIVICRM_API_KEY: ${CIVICRM_API_KEY}
       CIVICRM_SEARCHKIT_QUERIES: ${CIVICRM_SEARCHKIT_QUERIES}

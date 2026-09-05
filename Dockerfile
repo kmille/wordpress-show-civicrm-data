@@ -7,10 +7,6 @@ RUN uv build --wheel
 
 FROM python:3.14-alpine3.24
 
-LABEL org.opencontainers.image.source=https://github.com/kmille/wordpress-show-civicrm-data.git
-LABEL org.opencontainers.image.description="Show CiviCRM values in Wordpress"
-LABEL org.opencontainers.image.licenses=MIT
-
 ENV PYTHONUNBUFFERED=TRUE
 
 RUN adduser -D api
