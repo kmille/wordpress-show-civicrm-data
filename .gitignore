@@ -10,3 +10,8 @@ wheels/
 .venv
 
 .env
+
+
+germany-cities.geojson
+ignore.txt
+overrides.csv
