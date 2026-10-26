@@ -6,7 +6,7 @@ import json
 from flask import Flask, request
 import waitress
 
-from vorleseorte import bp as vorleseorte_bp
+from civi_api_export.vorleseorte import bp as vorleseorte_bp
 
 FORMAT = "%(asctime)s %(levelname)s: %(message)s"
 logging.basicConfig(format=FORMAT, level=logging.INFO)

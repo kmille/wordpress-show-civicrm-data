@@ -29,7 +29,7 @@ from datetime import datetime, timezone
 import requests
 from flask import Blueprint, jsonify, request
 
-from geo_lookup import Orte, to_geojson
+from civi_api_export.geo_lookup import Orte, to_geojson
 
 bp = Blueprint("vorleseorte", __name__)
 
